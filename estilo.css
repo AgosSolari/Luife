@@ -1,0 +1,726 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+
+
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 15%;
+	text-align: center;
+	align-items: flex-end;
+	font-size: medium;
+}
+
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;  
+}
+
+#contactate {
+	margin-bottom: 30px;
+}
+
+
+.formulario {
+	grid-column: 1/-1;
+	width: 70%;
+	background: #F0022C;
+	padding: 30px;
+	margin: auto;
+	margin-top: 70px;
+	margin-bottom: 120px;
+	border-radius: 50px;
+	box-shadow: 1px 1px 12px 4px black;
+	color: #FFFEEF;
+}
+
+.info-formulario {
+	width: 100%;
+	padding: 22px;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	border: none;
+	margin-top: 8px;
+}
+
+.mensaje {
+	width: 100%;
+	padding: 36px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	border: none;
+	margin-top: 8px;
+}
+
+.boton {
+	width: 100%;
+	background-color: rgb(207, 128, 128);
+	padding: 12px;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: larger;
+	margin-top: 10px;
+}
+
+.grid_container{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 100px
+	"navbar" 150px
+	"main"	auto
+	"footer" 25px
+	;
+}
+
+.header{
+	grid-area: header;
+}
+
+
+.navbar{
+	grid-area: navbar;
+	display: grid;
+	align-items: center;
+}
+
+.logo {
+	position: relative;
+	height: 100%;
+	width: auto;
+	top: 0;
+	left: 40%;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+	font-size: 35px;
+	height: 100%;
+	background-color: #F0022C;
+}
+
+
+.main{
+	grid-area: main;
+	width: 100%;
+}
+ 
+
+.banner1 {
+	width: 100%;
+	padding-left: 0%;
+	grid-column: 1/-1;
+}
+
+.banner2 {
+	width: 100%;
+	padding-left: 0%;
+	grid-column: 1/-1;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #FFFEEF;
+	text-align: center;
+	font-size: 50%;	
+	border-radius: 1.5cm;
+	background-color: #F0022C;
+	padding: 0.45cm;
+}
+
+
+.quienes {
+	margin-left: 2%;
+	font-size: large;
+}
+
+#info {
+	text-align: justify;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#slogan {
+	font-weight: bold;
+	color: #F0022C;
+    text-align: center;
+    margin: 5%;
+	font-size: larger;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #F0022C;
+	height: 75px;
+	width: 100%;
+}
+
+footer p {
+	color: #fff;
+	padding-left: 2%;
+	float: left;
+	padding-top: 18px;
+}
+
+.logo-redes {
+	height: 40px;
+	width: auto;
+	float: left;
+	padding-top: 19px;
+	padding-left: 15px;
+}
+
+.equipo img {
+	width: 60%;
+	height: auto;
+	align-items: center;
+	position: relative;
+	left: 20%;
+}
+
+#titulo {
+	background-color: #F0022C;
+	color: #fff;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	font-size: larger;
+}
+
+#titulo-p {
+	display: grid;
+	background-color: #F0022C;
+	color: #fff;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	font-size: larger;
+}
+
+
+.container {
+	width: 100%;
+	position: relative;
+	margin: auto;
+  }
+
+/* Slideshow container */
+.slider {
+	width:100%;
+	position: relative;
+	margin: auto;
+	
+  }
+  
+  /* Hide the images by default */
+  .elementoCarousel {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	top: 10px;
+	padding: 16px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+
+  .main-p {
+	grid-area: main;
+	display: block;
+  }
+
+  .productos-info {
+	grid-area: section;
+	padding-bottom: 10%;
+  }
+
+
+  #remeras {
+	text-align: center;
+	margin-top: 10%;
+  }
+
+  #buzos {
+	text-align: center;
+	margin-top: 10%;
+  }
+
+  #camperas {
+	text-align: center;
+	margin-top: 10%;
+  }
+
+  #gorras {
+	text-align: center;
+	margin-top: 10%;
+  }
+
+  #posters {
+	text-align: center;
+	margin-top: 10%;
+  }
+
+  #minih {
+	text-align: center;
+	margin-top: 10%;
+  }
+
+  .foto-producto {
+	width: 50%;
+
+  }
+
+  .produ-titulo {
+	color: #F0022C;
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-decoration: underline;
+  }
+
+ 
+@media only screen and (min-width: 768px) {
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		width: auto;
+		top: 50px;
+		padding: 16px;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 30px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	  }
+
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.slider {
+		width:100%;
+		height: auto;
+		position: relative;
+		margin: auto;
+		
+	  }
+
+	h5 {
+		font-size: smaller;
+		color: #F0022C;
+	}
+
+	.formulario {
+		padding: 27px;
+		width: 90%;
+		margin-top: 55px;
+		margin-bottom: 125px;
+	}
+
+
+	.menu {
+		flex-direction: row;
+		font-size: 35px;
+		padding-right: 40px;
+		align-items: center;
+		background-color: #FFF;
+		color: #F0022C;
+		margin-left: 50%;
+	}
+
+	.banner1 {
+		grid-column: 1 / -1;
+	}
+
+	.banner2 {
+		grid-column: 1 / -1;
+	}
+
+
+	.quienes {
+		margin-top: 1%;
+		grid-column: 1 / -1;
+		grid-row: 2/3;
+	}
+
+	.menu a {
+	
+		font-size: bold;
+	}
+
+    .grid_container{
+      
+		grid-template: 
+		"header 	navbar" 	100px 
+		"main    	main" 		auto
+		"footer 	footer" 	50px /
+		 200px 		auto;
+ 	}
+
+	.logo {
+		margin-left: 0%;
+	}
+
+	.equipo {
+		width: 100%;
+	}
+
+	.main-p {
+		grid-area: main;
+		display: block;
+	}
+
+	.productos-info {
+		grid-area: section;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row: 1fr 1fr 1fr 1fr;
+		padding-bottom: 5%;
+	  }
+	
+	
+	  #remeras {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		text-align: center;
+	  }
+	
+	  #buzos {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		text-align: center;
+	  }
+
+	  #camperas {
+		grid-column: 1/2;
+		grid-row: 3/4;
+		text-align: center;
+		margin-top: 10%;
+	  }
+	
+	  #gorras {
+		grid-column: 2/3;
+		grid-row: 3/4;
+		text-align: center;
+		margin-top: 10%;
+	  }
+	
+	  #posters {
+		grid-column: 1/2;
+		grid-row: 4/5;
+		text-align: center;
+		margin-top: 10%;
+	  }
+
+	  #minih {
+		grid-column: 2/3;
+		grid-row: 4/5;
+		text-align: center;
+		margin-top: 10%;
+	  }
+	
+	  .foto-producto {
+		width: 50%;
+	
+	  }
+	
+	  .produ-titulo {
+		color: #F0022C;
+		font-size: 30px;
+		font-weight: bold;
+		padding-bottom: 10px;
+		text-decoration: underline;
+	  }
+
+
+}
+
+
+@media only screen and (min-width: 992px) {
+    .main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+input:hover {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}	
+
+
+	.logo:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}	
+	
+.formulario {
+	grid-column: 1/-1;
+	width: 90%;
+	background: #F0022C;
+	padding: 27px;
+	margin: auto;
+	margin-top: 70px;
+	margin-bottom: 120px;
+	border-radius: 50px;
+	box-shadow: 1px 1px 12px 4px black;
+	color: #FFFEEF;
+}
+
+	.menu {
+		flex-direction: row;
+		font-size: 35px;
+		padding-right: 40px;	
+	}
+
+	.banner1 {
+		grid-column: 1 / -1;
+	}
+
+	.banner2 {
+		grid-column: 1 / -1;
+	}
+
+    .quienes {
+		margin-top: 0%;
+		grid-column: 1 / -1;
+		grid-row: 2/3;
+	}
+
+	.menu a {
+		
+		font-size: bold;
+	}
+
+	.grid_container{
+		
+		grid-template: 
+		"header 	navbar 	navbar" 	80px auto auto
+		"main 	    main 	main" 	    auto
+		"footer  	footer 	footer" 	50px /
+		 400px 		auto 	200px;
+	}
+
+	.menu a:hover {
+		color: #F0022C;
+		background-color: #FFF;
+	}
+
+	.main-p {
+		grid-area: main;
+		display: block;
+	}
+	.productos-info {
+		grid-area: section;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-row: 1fr 1fr 1fr ;
+		padding-bottom: 5%;
+	  }
+	
+	
+	  #remeras {
+		grid-column: 1/2;
+		grid-row: 2/3;
+		text-align: center;
+	  }
+
+	  #remeras:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+	
+	  #buzos {
+		grid-column: 2/3;
+		grid-row: 2/3;
+		text-align: center;
+	  }
+
+	  #buzos:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+	
+	  #camperas {
+		grid-column: 3/4;
+		grid-row: 2/3;
+		text-align: center;
+	  }
+
+	  #camperas:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+	
+	  #gorras {
+		grid-column: 1/2;
+		grid-row: 3/4;
+		text-align: center;
+		margin-top: 10%;
+	  }
+
+	  #gorras:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+	
+	  #posters {
+		grid-column: 2/3;
+		grid-row: 3/4;
+		text-align: center;
+		margin-top: 10%;
+	  }
+
+	  #posters:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+	
+	  #minih {
+		grid-column: 3/4;
+		grid-row: 3/4;
+		text-align: center;
+		margin-top: 10%;
+	  }
+
+	  #minih:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+	
+	  .foto-producto {
+		width: 50%;
+	
+	  }
+	
+	  .produ-titulo {
+		color: #F0022C;
+		font-size: 30px;
+		font-weight: bold;
+		padding-bottom: 10px;
+		text-decoration: underline;
+	  }
+
+	  .equipo:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+
+	  #slogan:hover {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		width: auto;
+		top: 70px;
+		padding: 16px;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 30px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	  }
+
+    .main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+
+
+	.menu {
+		flex-direction: row;
+		font-size: 35px;
+		padding-right: 40px;
+	}
+
+	.menu a {
+		
+		font-size: bold;
+	}
+
+	.banner1 {
+		grid-column: 1 / -1;
+	}
+
+	.banner2 {
+		grid-column: 1 / -1;
+	}
+
+.quienes {
+		grid-column: 1 / -1;
+		grid-row: 2/3;
+	}
+
+	.grid_container {
+		width: 90%;
+		margin: auto;
+	}
+
+	.main-p {
+		grid-area: main;
+		display: block;
+	}
+}
